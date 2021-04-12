@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/03/31 22:19:20.000.774,=C:\Users\bobel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/03/31 22:19:31.000.543,=C:\Users\bobel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/04/01 09:07:47.000.231,C:\Users\bobel\Desktop\Splash_Screen_MultiDevices\Splash_Screen.pas=C:\Users\bobel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/04/01 09:07:47.000.231,C:\Users\bobel\Desktop\Splash_Screen_MultiDevices\Splash_Screen.fmx=C:\Users\bobel\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2021/04/01 09:08:04.000.370,C:\Users\bobel\Desktop\Splash_Screen_MultiDevices\Splash_Screen_MultiDevices.dproj=C:\Users\bobel\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

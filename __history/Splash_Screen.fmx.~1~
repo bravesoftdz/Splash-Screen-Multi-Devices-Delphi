@@ -1,0 +1,155 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Form1'
+  ClientHeight = 380
+  ClientWidth = 660
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object pnPrincipal: TRectangle
+    Align = Client
+    Fill.Color = xFF383A59
+    Size.Width = 660.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+  end
+  object lbIfchat: TLabel
+    AutoSize = True
+    StyledSettings = []
+    Position.X = 136.000000000000000000
+    Position.Y = 64.000000000000000000
+    Scale.X = 1.799999952316284000
+    Scale.Y = 1.799999952316284000
+    Size.Width = 137.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 40.000000000000000000
+    TextSettings.Font.StyleExt = {00090000000000000004000000}
+    TextSettings.FontColor = xFFFE79C7
+    Text = 'IFCHAT'
+    TabOrder = 1
+  end
+  object lbApp: TLabel
+    AutoSize = True
+    StyledSettings = [Style]
+    Position.X = 384.000000000000000000
+    Position.Y = 64.000000000000000000
+    Scale.X = 1.799999952316284000
+    Scale.Y = 1.799999952316284000
+    Size.Width = 77.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 40.000000000000000000
+    TextSettings.FontColor = xFFFE79C7
+    Text = 'APP'
+    TabOrder = 2
+  end
+  object lbInformation: TLabel
+    StyledSettings = [Family, Style]
+    Position.Y = 144.000000000000000000
+    Scale.X = 1.500000000000000000
+    Scale.Y = 1.500000000000000000
+    Size.Width = 441.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.FontColor = xFF6272A4
+    TextSettings.HorzAlign = Center
+    Text = 'Carregando...'
+    TabOrder = 3
+  end
+  object lbLoading: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.Y = 320.000000000000000000
+    Size.Width = 665.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = xFF6272A4
+    TextSettings.HorzAlign = Center
+    Text = 'loading'
+    TabOrder = 5
+  end
+  object lbCriador: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 504.000000000000000000
+    Position.Y = 360.000000000000000000
+    Size.Width = 136.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = xFF6272A4
+    Text = 'Created: Gabriel Bobello'
+    TabOrder = 6
+  end
+  object lytProgressBar: TLayout
+    Position.Y = 264.000000000000000000
+    Size.Width = 665.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object pnBarraVazia: TRectangle
+      Fill.Color = xFF6272A4
+      Opacity = 0.699999988079071000
+      Position.X = 48.000000000000000000
+      Position.Y = 27.000000000000000000
+      Size.Width = 560.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object lbValor: TLabel
+        Align = Contents
+        AutoSize = True
+        Size.Width = 560.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = '999'
+        TabOrder = 1
+      end
+      object Progress: TRectangle
+        Align = Left
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF979797
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFFFE79C7
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFFAA55FF
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.Y = 0.500000000000000000
+        Fill.Gradient.StopPosition.X = 1.000000000000000000
+        Fill.Gradient.StopPosition.Y = 0.500000000000000000
+        Opacity = 0.699999988079071000
+        Size.Width = 180.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+      end
+    end
+  end
+  object Timer1: TTimer
+    Interval = 800
+    OnTimer = Timer1Timer
+    Left = 24
+    Top = 16
+  end
+end
